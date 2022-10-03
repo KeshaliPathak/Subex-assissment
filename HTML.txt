@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Practice test</h1>
+<h2>practice</h2>
+<h3>practice</h3>
+<p>My first page.</p>
+<img src="C:\Users\keshali.pathak\Pictures\Screenshots.jpg" alt="C:\Users\keshali.pathak\Pictures\Screenshots.jpg" width="104" height="142">
+<h1 style="background-color:DodgerBlue;">Hello World</h1>
+<p style="background-color:Tomato;">hello</p>
+<h1 style="color:Tomato;" >Hello World</h1>
+<h1 style="border:2px solid Tomato;">Hello World</h1>
+
+<h1 style="color:blue;">A Blue Heading</h1>
+<p style="color:red;">A red paragraph.</p>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {background-color: powderblue;}
+h1   {color: blue;}
+p    {color: red;}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+}
+p {
+  color: red;
+  font-family: courier;
+  font-size: 160%;
+}
+</style>
+</head>
+<body>
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+</html>
+
+</body>
+</html>
+
+
+</body>
+</html>
