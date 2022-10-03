@@ -1,0 +1,65 @@
+CREATE TABLE Employee(
+PersonID int,
+    LastName varchar(255),
+    FirstName varchar(255),
+    Address varchar(255),
+    City varchar(255),
+    Price int
+);
+
+INSERT INTO Employee (PersonID ,LastName,FirstName ,Address,City,Price)
+VALUES ('1','Pathak','Keshali','ABC','Vadodara','10');
+INSERT INTO Employee (PersonID ,LastName,FirstName ,Address,City,Price)
+VALUES ('2','Karmarkar','Aditya','XYZ','Banglore','20');
+INSERT INTO Employee (PersonID ,LastName,FirstName ,Address,City,Price)
+VALUES ('3','Pathak','Aayush','PQR','Nagpur','15');
+select * from Employee;
+
+UPDATE Employee
+SET LastName = 'Karmarkar'
+WHERE PersonID = 1;
+select * from Employee;
+
+SELECT * FROM Employee
+WHERE LastName='Karmarkar';
+
+SELECT * FROM Employee
+WHERE Price BETWEEN 10 AND 20;
+
+SELECT PersonID AS ID, FirstName AS Name
+FROM Employee;
+
+CREATE TABLE Student(
+StudentID int,
+    LastName varchar(255),
+    FirstName varchar(255),
+    City varchar(255)
+);
+
+INSERT INTO Student (StudentID ,LastName,FirstName ,City)
+VALUES ('1','Kthari','Shubham','Vadodara');
+INSERT INTO Student (StudentID ,LastName,FirstName ,City)
+VALUES ('2','Vasava','Nirali','Surat');
+INSERT INTO Student (StudentID ,LastName,FirstName ,City)
+VALUES ('3','Dixit','Isha','Ahmedabad');
+SELECT * from Student;
+
+SELECT Employee.LastName, Student.LastName
+FROM Employee
+INNER JOIN Student ON Student.LastName=Employee.LastName;
+
+SELECT Price,
+CASE
+    WHEN Price > 15 THEN 'The price is greater'
+    WHEN Price = 15 THEN 'The price is 15'
+    ELSE 'The price is under 10'
+END AS Price
+FROM Employee;
+
+SELECT 30 + 20;
+SELECT 30 - 20;
+SELECT 30 * 20;
+SELECT 30 / 20;
+SELECT 30 % 20;
+
+
